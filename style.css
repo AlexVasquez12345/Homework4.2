@@ -1,0 +1,61 @@
+/*Alex Vasquez*/
+/*sets the background color of the webpage to be beige*/
+body{
+    background-color: #FFEFD8;
+}
+/* spaces out the input and the label of the form */
+input, label {
+    display:block;
+}
+
+/*makes all headers with the size 1 have a text color of orange,
+centered text, an underline with a sky blue colorway*/
+h1 {
+    color: orange;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: lightskyblue;
+    
+}
+/*set the width and height to be 50%, so that 
+the table can be centered*/
+table {
+    width: 50%;
+    height: 50%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+/*simple color assignments for the header and data of the table*/
+td {
+    color:black;
+    background-color: lightskyblue;
+    text-align: center;
+}
+/*kept this here just in case*/
+th {
+    color:black;
+    background-color:orange;
+}
+/*replacement of old th css,
+this will make it so that every other row in the table
+has a different color. In this case, orange square with
+a black text colorway*/
+table td:nth-child(2n) {
+    color:black;
+    background-color:orange;
+}
+/*set the width and height to be 50%, so that 
+the form can be centered*/
+form {
+    width: 15%;
+    height: 15%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/*changes tab background to be white. Couldn't figure out how to change
+the color of the other stuff though*/
+#my_tabs {
+    background: white;
+    display: block;
+}

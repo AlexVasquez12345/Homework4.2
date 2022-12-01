@@ -1,0 +1,57 @@
+<!--Alex Vasquez-->
+<!--JQuery Library API Links: https://www.sitepoint.com/basic-jquery-form-validation-tutorial/-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Dyanmic Multiplication Table</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--MAKES SLIDERs WORK, DO NOT REMOVVVVVVEEEEEEEE!-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  </head>
+  <body>
+    <main>
+        <h1>Dyanmic Multiplication Table</h1>
+        <!--setup for the form to function correctly
+            also an inclusion of the submit button to do
+            the calculation once clicked-->
+        <form name="my_table" id = "my_table" onsubmit="return false">
+          <!--Addition of sliders for each value-->
+          <label for="min_y">Min Val of Y(-50 to 50)</label>
+          <input type="number" id="min_y" name="min_y" min="-50" max="50"><br>
+          <div id = "min_y_slider"></div>
+
+          <label for="max_y">Max Val of Y(-50 to 50)</label>
+          <input type="number" id="max_y" name="max_y" min="-50" max="50"><br>
+          <div id = "max_y_slider"></div>
+
+          <label for="min_x">Min Val of X(-50 to 50)</label>
+          <input type="number" id="min_x" name="min_x" min="-50" max="50"><br>
+          <div id = "min_x_slider"></div>
+
+          <label for="max_x">Max Val of X(-50 to 50)</label>
+          <input type="number" id="max_x" name="max_x" min="-50" max="50"><br>
+          <div id = "max_x_slider"></div>
+          <!--Changed to storage so we can save the values-->
+          <input type="submit" value="Store" onclick="Storage()">
+
+        </form>
+        <!-- In the case where we have an error, this will display an empty table, else
+        it'll display the value full of the values we inputted-->
+        <div id = "true_table"></div>
+        <div id ="my_tabs">
+          <!--VERY IMPORTANT, THESE UL ALLOW THE TABS TO BE SHOWN. DO NOT DELETE!-->
+          <ul></ul>
+        </div>
+    </main>
+  <!--JQuery Library API-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!--Secondary JQuery Library API-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+  <!--JQuery Sliders and Tabs Stuff-->
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="js/arithmetic.js"></script>
+  <script src="js/valid_input.js"></script>
+  </body>
+</html>
